@@ -1,0 +1,61 @@
+<!DOCTYPE>
+<html>
+    <head>
+        <title></title>
+         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.2/css/materialize.min.css">
+         <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+         <script src="https://code.jquery.com/jquery-2.2.4.min.js" ntegrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script> 
+         <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.2/js/materialize.min.js"></script>
+         
+    </head>
+    <body>
+        <header>
+            <nav>
+                <div class="nav-wrapper">
+                <a id="navTitle" href="#" class="brand-logo">Logo</a>
+                <ul id="nav-mobile" class="right hide-on-med-and-down">
+                    <li><a href="">Sass</a></li>
+                    <li><a href="">Components</a></li>
+                    <li><a href="">JavaScript</a></li>
+                </ul>
+                </div>
+            </nav>
+        </header>
+        <main>
+            <div class="container-fluid">
+                <div class="row" style="margin-top: 25px;">
+                    <div class="col s12 m12 l12">
+                         <div class="input-field col s2 m2 l2">
+                              <input type="text" id="desc" class="validate">
+                              <label for="description">Description</label>
+                        </div>
+                         <div class="input-field col s2 m2 l2">
+                            <input id="amount" type="text" class="validate">
+                            <label for="amount">Amount</label>
+                        </div>
+                         <div class="input-field col s2 m2 l2">
+                            <input id="valor" type="text" class="validate">
+                            <label for="value">Value</label>
+                        </div>
+                        <div class="input-field col s6 m6 l6">
+                            <span id="btnUpdate" style="display: none;">
+                                <a class="btn-floating btn-large waves-effect waves-light green" onclick="updateData();"><i class="material-icons">add</i></a>
+                                <a class="btn-floating btn-large waves-effect waves-light green" onclick="resetForm"><i class="material-icons">cancel</i></a>
+                            </span>
+                                <a id="btnAdd" class="btn-floating btn-large waves-effect waves-light green" onclick="addData();"><i class="material-icons">add</i></a>
+                            
+                        </div>
+                        
+                        <table class="bordered" id="listTable"></table>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <footer>
+            
+        </footer>
+        <script src="js/config.js"></script>
+        <script src="js/main.js"></script>
+
+    </body>
+</html>

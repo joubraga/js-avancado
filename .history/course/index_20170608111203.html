@@ -1,0 +1,56 @@
+<!DOCTYPE>
+<html>
+    <head>
+        <title></title>
+         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.2/css/materialize.min.css">
+         <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+         <script src="https://code.jquery.com/jquery-2.2.4.min.js" ntegrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script> 
+         <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.2/js/materialize.min.js"></script>
+         
+    </head>
+    <body>
+        <header>
+            <nav>
+                <div class="nav-wrapper">
+                <a id="navTitle" href="#" class="brand-logo">Logo</a>
+                <ul id="nav-mobile" class="right hide-on-med-and-down">
+                    <li><a href="">Sass</a></li>
+                    <li><a href="">Components</a></li>
+                    <li><a href="">JavaScript</a></li>
+                </ul>
+                </div>
+            </nav>
+        </header>
+        <main>
+            <div class="container-fluid">
+                <div class="row" style="margin-top: 25px;">
+                    <div class="col s10 m10 l10 offset-s1 offset-m1 offset-l1">
+                         <div class="input-field col s3 m3 l3">
+                              <input id="description" type="text" class="validate">
+                              <label for="description">Description</label>
+                        </div>
+                         <div class="input-field col s3 m3 l3">
+                            <input id="ammount" type="text" class="validate">
+                            <label for="ammount">Ammount</label>
+                        </div>
+                         <div class="input-field col s3 m3 l3">
+                            <input id="value" type="text" class="validate">
+                            <label for="value">Value</label>
+                        </div>
+                        <div class="input-field col s1 m1 l1">
+                            <a class="btn-floating btn-large waves-effect waves-light red"><i class="material-icons"></i></a>
+                        </div>
+                        
+                        <table class="bordered" id="listTable"></table>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <footer>
+            
+        </footer>
+        <script src="js/config.js"></script>
+        <script src="js/main.js"></script>
+
+    </body>
+</html>
